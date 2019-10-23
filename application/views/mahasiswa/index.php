@@ -21,6 +21,19 @@
 
 	</div>
 
+<div class="row mt-3">
+	<div class="col-md-6">
+		<form action="" method="post">
+			
+			
+		</form>
+
+	</div>
+
+</div>
+
+
+
 	<div class="row mt-3">
 		<div class="col-md-6">
 			<h3>Daftar Mahasiswa</h3>
@@ -29,7 +42,9 @@
 			  			<li class="list-group-item">
 			  				<?= $mhs['nama'];  ?>
 			  				<a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>" class="badge badge-danger float-right" onclick="return confirm('yakin?');">hapus</a>
+			  				<a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs['id']; ?>" class="badge badge-success float-right" >ubah</a>
 			  				<a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs['id']; ?>" class="badge badge-primary float-right" >detail</a>
+			  				
 
 			  			</li>
 			 		<?php endforeach; ?>
